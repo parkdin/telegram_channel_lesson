@@ -7,7 +7,7 @@ def get_post_month(data:dict,month:int)->int:
 
     args:
         data: a dictionary of posts
-        month: the month to check
+        month: as number between 1 and 12
 
     returns: the number of posts for the given month
     """
