@@ -1,15 +1,16 @@
-
 from read_data import fromJson
-# Define a function get post for given month
+
+
 def get_post_month(data:dict,month:int)->int:
     """
     Return the number of posts for a given month
 
-    args:
-        data: a dictionary of posts
-        month: as number between 1 and 12
+    Args:
+        data (dict): a dictionary of posts
+        month (int): as number between 1 and 12
 
-    returns: the number of posts for the given month
+    Returns: 
+        int: the number of posts for the given month
     """
     # Initialize a counter
     count = 0

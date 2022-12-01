@@ -1,17 +1,25 @@
 from read_data import fromJson
+
+
 def get_post_per_month(data:dict)->dict:
     """
     Return the number of posts for each month
 
-    args:
-        data: a dictionary of posts
-    returns: a dictionary with the number of posts for each month
+    Args:
+        data (dict): a dictionary of posts
+        
+    Returns: 
+        dict: a dictionary with the number of posts for each month
     """
     # Initialize a counter
     count = {}  
     # Loop through the dictionary
     messages= data['messages']
-
+    for month in range(1, 13):
+        count[month] = 0
+        for msg in messages:
+            if msg['type']=='message':          
+                count[month]+=int(msg['date'][5:7])==month
 
     
     return count

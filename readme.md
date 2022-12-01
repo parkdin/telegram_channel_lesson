@@ -31,4 +31,3 @@ The purpose of this project is to provide a simple way to get statistics about a
     "text": "TEXT",
     "text_entities":[]
 }
-
